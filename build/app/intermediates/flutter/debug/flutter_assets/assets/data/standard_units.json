@@ -1,0 +1,39 @@
+{
+  "name": "Длина",
+  "icon_name": "Length",
+  "units": [
+    {
+      "name": "Метр",
+      "conversion": 1.0,
+      "base_unit": true
+    },
+    {
+      "name": "Миллиметр",
+      "conversion": 1000.0
+    },
+    {
+      "name": "Сантиметр",
+      "conversion": 100.0
+    },
+    {
+      "name": "Километр",
+      "conversion": 0.001
+    },
+    {
+      "name": "Дюйм",
+      "conversion": 39.3701
+    },
+    {
+      "name": "Фут",
+      "conversion": 3.28084
+    },
+    {
+      "name": "Ярд",
+      "conversion": 1.09361
+    },
+    {
+      "name": "Миля",
+      "conversion": 0.000621371
+    }
+  ]
+}

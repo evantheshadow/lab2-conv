@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="maxeem.america.flutter.converter.dev"
+4    android:versionCode="12"
+5    android:versionName="0.6.12-dev" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
+15-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:23:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
+16-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
+18
+19    <application
+19-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:4:5-43:19
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/e85a954f5e6a5e8b5fd7317e8ec8d881/core-1.6.0/AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:6:9-43
+23        android:label="@string/app_name" >
+23-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:5:9-41
+24        <activity
+24-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:7:9-35:20
+25            android:name="maxeem.america.flutter.converter.MainActivity"
+25-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:8:13-41
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+26-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:11:13-144
+27            android:hardwareAccelerated="true"
+27-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:12:13-47
+28            android:icon="@mipmap/ic_launcher"
+28-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:14:13-47
+29            android:label="@string/app_title"
+29-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:13:13-46
+30            android:launchMode="singleTop"
+30-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:9:13-43
+31            android:roundIcon="@mipmap/ic_launcher_round"
+31-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:15:13-58
+32            android:theme="@style/LaunchTheme"
+32-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:10:13-47
+33            android:windowSoftInputMode="adjustResize" >
+33-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:16:13-55
+34            <intent-filter>
+34-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:18:13-21:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:19:17-68
+35-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:19:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:20:17-76
+37-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:20:27-74
+38            </intent-filter>
+39
+40            <!-- Specify that the launch screen should continue being displayed -->
+41            <!-- until Flutter renders its first frame. -->
+42            <meta-data
+42-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:25:13-27:70
+43                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+43-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:26:21-85
+44                android:resource="@drawable/launch_background" />
+44-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:27:21-67
+45
+46            <!-- Theme to apply as soon as Flutter begins rendering frames -->
+47            <meta-data
+47-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:30:13-33:15
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:31:21-76
+49                android:resource="@style/NormalTheme" />
+49-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:32:21-58
+50        </activity>
+51
+52        <!--
+53             Don't delete the meta-data below.
+54            This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+55        -->
+56        <meta-data
+56-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:39:9-41:37
+57            android:name="flutterEmbedding"
+57-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:40:17-48
+58            android:value="2" />
+58-->/Users/ShadowCat/Documents/Projects/Test-Projects/converter/android/app/src/main/AndroidManifest.xml:41:17-34
+59
+60        <activity
+60-->[:url_launcher_android] /Users/ShadowCat/Documents/Projects/Test-Projects/converter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+61            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+61-->[:url_launcher_android] /Users/ShadowCat/Documents/Projects/Test-Projects/converter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+62            android:exported="false"
+62-->[:url_launcher_android] /Users/ShadowCat/Documents/Projects/Test-Projects/converter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+63            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+63-->[:url_launcher_android] /Users/ShadowCat/Documents/Projects/Test-Projects/converter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+64
+65        <service
+65-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:27:9-33:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:28:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+68            android:exported="false" >
+68-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:29:13-37
+69            <meta-data
+69-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
+70                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+70-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/04b66e5145cf6f9d798fe846354aca1a/play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-installations:17.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/c52601401ad613ba52412dc5c5e0fc38/firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+73                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+73-->[com.google.firebase:firebase-installations:17.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/c52601401ad613ba52412dc5c5e0fc38/firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-installations:17.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/c52601401ad613ba52412dc5c5e0fc38/firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+75        </service>
+76
+77        <provider
+77-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+78            android:name="com.google.firebase.provider.FirebaseInitProvider"
+78-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+79            android:authorities="maxeem.america.flutter.converter.dev.firebaseinitprovider"
+79-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+80            android:directBootAware="true"
+80-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+81            android:exported="false"
+81-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+82            android:initOrder="100" />
+82-->[com.google.firebase:firebase-common:20.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/8933ba1f87f2da394234492cd8e12403/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+83
+84        <receiver
+84-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
+85            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+85-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
+86            android:enabled="true"
+86-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
+87            android:exported="false" >
+87-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
+88        </receiver>
+89
+90        <service
+90-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
+91            android:name="com.google.android.gms.measurement.AppMeasurementService"
+91-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
+92            android:enabled="true"
+92-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
+93            android:exported="false" />
+93-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
+94        <service
+94-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
+95            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+95-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
+96            android:enabled="true"
+96-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
+98            android:permission="android.permission.BIND_JOB_SERVICE" />
+98-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/02746d69ce370af6791f1bb97ad9fdf9/play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
+99
+100        <meta-data
+100-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/a40ef6791cf34a9f0207fa0cf4c5e3fa/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+101            android:name="com.google.android.gms.version"
+101-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/a40ef6791cf34a9f0207fa0cf4c5e3fa/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+102            android:value="@integer/google_play_services_version" />
+102-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ShadowCat/.gradle/caches/transforms-2/files-2.1/a40ef6791cf34a9f0207fa0cf4c5e3fa/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+103    </application>
+104
+105</manifest>

@@ -1,0 +1,50 @@
+name: converter
+description: This is converter for Lab 2
+version: 0.6.12+12
+authors:
+  - Shadow Cat
+
+environment:
+  sdk: ">=2.9.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_cupertino_localizations: any
+  cupertino_icons: any
+
+  package_info: any
+  url_launcher: any
+  fluttertoast: any
+  websafe_svg: any
+  flutter_hooks: any
+  get_it: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/icon.png
+    - assets/data/
+    - assets/icons/
+
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: fonts/Raleway-Regular.ttf
+        - asset: fonts/Raleway-ExtraLight.ttf
+          weight: 200

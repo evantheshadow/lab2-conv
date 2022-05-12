@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">537283650420-fuk8uafa5k6t0frjiifa63pl6do0ud8m.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">537283650420</string>
+    <string name="google_api_key" translatable="false">AIzaSyCS7wUVB9q5K_vu-oBwY0MMM4R1H46Fq3M</string>
+    <string name="google_app_id" translatable="false">1:537283650420:android:66ffec28678a64fa6f0221</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCS7wUVB9q5K_vu-oBwY0MMM4R1H46Fq3M</string>
+    <string name="google_storage_bucket" translatable="false">plenary-beanbag-258623.appspot.com</string>
+    <string name="project_id" translatable="false">plenary-beanbag-258623</string>
+</resources>

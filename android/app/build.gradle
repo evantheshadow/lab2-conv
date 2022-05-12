@@ -1,0 +1,101 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new IllegalStateException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+} else if (System.getenv().containsKey("GITHUB_ACTIONS")) {
+    // we are on GitHub Actions
+    keystoreProperties.setProperty('storePassword', System.getenv('KEY_STORE_PASSWORD'))
+    keystoreProperties.setProperty('keyPassword', System.getenv('KEY_PASSWORD'))
+    keystoreProperties.setProperty('keyAlias', 'key0')
+    keystoreProperties.setProperty('storeFile', '../maxeem.jks')
+} else if (System.getenv().containsKey("FCI_COMMIT")) {
+    // we are at CodeMagic CI
+    keystoreProperties.setProperty('storePassword', System.getenv('FCI_KEYSTORE_PASSWORD'))
+    keystoreProperties.setProperty('keyPassword', System.getenv('FCI_KEY_PASSWORD'))
+    keystoreProperties.setProperty('keyAlias', System.getenv('FCI_KEY_ALIAS'))
+    keystoreProperties.setProperty('storeFile', System.getenv("FCI_BUILD_DIR") + "/../keystore/maxeem.jks")
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+android {
+    compileSdkVersion 30
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId "maxeem.america.flutter.converter"
+        resConfigs "en"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode localProperties.getProperty('flutter.versionCode')?.toInteger() ?: 1
+        versionName localProperties.getProperty('flutter.versionName') ?: "0.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+//        release {
+//            keyAlias keystoreProperties['keyAlias']
+//            keyPassword keystoreProperties['keyPassword']
+//            storeFile file(keystoreProperties['storeFile'])
+//            storePassword keystoreProperties['storePassword']
+//        }
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+            storeFile rootProject.file('debug.keystore')
+        }
+    }
+    buildTypes {
+//        release {
+//            signingConfig signingConfigs.release
+//        }
+        debug {
+            applicationIdSuffix '.dev'
+            versionNameSuffix '-dev'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
